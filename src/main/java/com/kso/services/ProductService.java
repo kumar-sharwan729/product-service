@@ -1,18 +1,16 @@
 package com.kso.services;
 
-import com.kso.entities.Product;
-import org.json.JSONObject;
+import java.util.List;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.kso.entities.Product;
 
 public interface ProductService {
 
     Product saveProduct(Product product);
     Product updateProduct(Product product);
-    Product findAllProduct();
+    List<Product> findAllProduct();
     Product findByProductId(Integer pid);
-    Product deleteProductById(Integer pid);
+    String deleteProductById(Integer pid);
 
 
 }
